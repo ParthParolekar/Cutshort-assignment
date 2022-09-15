@@ -1,0 +1,14 @@
+label {
+  align-items: flex-start;
+}
+
+label input {
+  width: 96%;
+  border: 1px solid rgb(231, 231, 231);
+  border-radius: 5px;
+  padding: 10px 2%;
+}
+
+label input:focus {
+  outline: none;
+}

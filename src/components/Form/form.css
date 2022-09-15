@@ -1,0 +1,9 @@
+.form-container {
+  width: 30%;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.form-container button {
+  width: 100%;
+}
