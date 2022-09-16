@@ -1,7 +1,6 @@
 .card-form-container {
-  width: 30%;
+  width: 40%;
   margin: 0 auto;
-  justify-content: center;
 }
 
 .card-form-container button {
@@ -9,7 +8,15 @@
 }
 
 .card-container {
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+@media (max-width: 680px) {
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+  }
 }
