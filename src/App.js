@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Route, Routes, useNavigate } from "react-router-dom";
 import "./App.css";
-import { Form } from "./components";
+import { Form, FormComplete, UserSelection } from "./components";
 import { navigateHandler } from "./utilities/FormButtonClickHandlers/formButtonClickHandlers";
 import {
   displayNameChangeHandler,
@@ -16,12 +16,15 @@ function App() {
     displayName: "",
     workspaceName: "",
     workspaceURL: "",
+    forTeam: false,
   });
   const navigate = useNavigate();
   console.log(user);
   return (
     <div className="App">
-      <h1 className="mg-2">Eden</h1>
+      <h1 className="mg-2">
+        <i className="fas fa-leaf"></i>Eden
+      </h1>
       <Routes>
         <Route
           path="/"
@@ -84,11 +87,19 @@ function App() {
                 },
               ]}
               navigateHandler={navigateHandler}
-              navigateURL={"/adduser/name"}
+              navigateURL={"/adduser/user-selection"}
               setUser={setUser}
               user={user}
             />
           }
+        />
+        <Route
+          path="adduser/user-selection"
+          element={<UserSelection user={user} setUser={setUser} />}
+        />
+        <Route
+          path="adduser/complete"
+          element={<FormComplete setUser={setUser} user={user} />}
         />
       </Routes>
     </div>

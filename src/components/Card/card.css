@@ -1,0 +1,25 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: whitesmoke;
+  min-width: 40%;
+  height: max-content;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  text-align: left;
+  cursor: pointer;
+}
+
+.card-active {
+  border: 1px solid var(--primary-color);
+}
+
+.card-active i {
+  color: var(--primary-color);
+}
+
+.card p {
+  max-width: 15ch;
+}

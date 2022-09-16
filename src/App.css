@@ -11,6 +11,12 @@
   margin-bottom: 2rem;
 }
 
+.fa-leaf {
+  font-size: 2rem;
+  margin-right: 1rem;
+  color: var(--primary-color);
+}
+
 button {
   font-family: "Inter", sans-serif;
   color: white;
@@ -25,6 +31,10 @@ button {
 button:hover {
   background-color: rgb(93, 2, 211);
   transition: all 0.2s;
+}
+
+p {
+  color: rgb(158, 158, 158);
 }
 
 .flex-column {
