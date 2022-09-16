@@ -15,6 +15,9 @@ const Form = ({
   total,
 }) => {
   const navigate = useNavigate();
+  const clickHandler = () => {
+    navigateHandler(navigate, navigateURL);
+  };
   return (
     <div>
       <Progress current={current} total={total} />
@@ -37,9 +40,7 @@ const Form = ({
             />
           )
         )}
-        <button onClick={() => navigateHandler(navigate, navigateURL)}>
-          Next
-        </button>
+        <button onClick={clickHandler}>Next</button>
       </div>
     </div>
   );
