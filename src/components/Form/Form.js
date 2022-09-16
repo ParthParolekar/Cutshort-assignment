@@ -1,6 +1,6 @@
 import React from "react";
 import "./form.css";
-import { Input } from "../index";
+import { Input, Progress } from "../index";
 import { useNavigate } from "react-router-dom";
 
 const Form = ({
@@ -11,10 +11,13 @@ const Form = ({
   user,
   navigateHandler,
   navigateURL,
+  current,
+  total,
 }) => {
   const navigate = useNavigate();
   return (
     <div>
+      <Progress current={current} total={total} />
       <div className="mg-2">
         <h1>{title}</h1>
         <p>{subtitle}</p>

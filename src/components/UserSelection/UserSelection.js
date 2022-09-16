@@ -1,6 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import Card from "../Card/Card";
+import Progress from "../Progress/Progress";
 import "./userSelection.css";
 
 const UserSelection = ({ user, setUser }) => {
@@ -15,6 +16,7 @@ const UserSelection = ({ user, setUser }) => {
   return (
     <div>
       <div className="mg-2">
+        <Progress current={3} total={4} />
         <h1>How are you planning to use Eden</h1>
         <p>We'll streamline your setup experience accordingly</p>
       </div>

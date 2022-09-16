@@ -19,7 +19,7 @@ function App() {
     forTeam: false,
   });
   const navigate = useNavigate();
-  console.log(user);
+
   return (
     <div className="App">
       <h1 className="mg-2">
@@ -59,6 +59,8 @@ function App() {
               navigateURL={"/adduser/workspace"}
               setUser={setUser}
               user={user}
+              current={1}
+              total={4}
             />
           }
         />
@@ -90,6 +92,8 @@ function App() {
               navigateURL={"/adduser/user-selection"}
               setUser={setUser}
               user={user}
+              current={2}
+              total={4}
             />
           }
         />

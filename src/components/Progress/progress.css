@@ -1,0 +1,43 @@
+.progress {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: max-content;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 3rem;
+  height: 30px;
+}
+
+.progress div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.progress div h4 {
+  /* color: white; */
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: 1px solid gray;
+}
+
+.progress .active h4 {
+  color: white;
+  background-color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+.line {
+  width: 20px;
+  height: 2px;
+  background-color: gray;
+}
+
+.active .line {
+  background-color: var(--primary-color);
+}
